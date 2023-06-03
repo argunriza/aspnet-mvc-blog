@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Routing.Patterns;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -23,5 +25,21 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "Category",
+    pattern: "category/{category}-{slug}",
+    defaults: new { controller = "Category", action = "Index" }
+);
+app.MapControllerRoute(
+    name: "Blog",
+    pattern: "/blog/title-slug",
+    defaults: new { controller = "Blog", action = "Detail" }
+);
+app.MapControllerRoute(
+    name: "Page",
+    pattern: "/blog/title-slug",
+    defaults: new { controller = "Page", action = "Detail" }
+);
 
 app.Run();
