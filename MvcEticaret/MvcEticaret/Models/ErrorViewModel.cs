@@ -1,4 +1,4 @@
-namespace AspNetMvcDers10.Models
+namespace MvcEticaret.Models
 {
     public class ErrorViewModel
     {
