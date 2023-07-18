@@ -19,17 +19,18 @@
     <link rel="stylesheet" href="~/plugins/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="~/plugins/owl-carousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="~/plugins/magnific-popup/magnific-popup.css">
-    <!-- manin stylesheet -->
+    <!-- main stylesheet -->
     <link rel="stylesheet" href="~/css/style.css">
 </head>
 <body>
-    @Html.Partial("_Navbar")
+    @await Component.InvokeAsync("Navbar")
+   
 
     <main>
         @RenderBody()
     </main>
 
-    @Html.Partial("_Footer")
+    @await Component.InvokeAsync("Footer")
 
     <!-- THEME JAVASCRIPT FILES
     ================================================== -->
@@ -38,7 +39,7 @@
     <!-- Bootstrap jQuery -->
     <script src="~/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="~/plugins/bootstrap/js/popper.min.js"></script>
-    <!-- Owl caeousel -->
+    <!-- Owl carousel -->
     <script src="~/plugins/owl-carousel/owl.carousel.min.js"></script>
     <script src="~/plugins/slick-carousel/slick.min.js"></script>
     <script src="~/plugins/magnific-popup/magnific-popup.js"></script>
