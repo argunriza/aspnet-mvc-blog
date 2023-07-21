@@ -1,7 +1,4 @@
 ﻿namespace AspNetMvcBlog.Models
 {
-    public class SliderModel
-    {
-
-    }
+    public class SliderModel { }
 }

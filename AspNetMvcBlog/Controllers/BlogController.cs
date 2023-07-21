@@ -8,7 +8,18 @@ namespace AspNetMvcBlog.Controllers
         {
             return View();
         }
-        public IActionResult Detail(int id)
+
+        public IActionResult Right(int id)
+        {
+            return View();
+        }
+
+        public IActionResult Left()
+        {
+            return View();
+        }
+
+        public IActionResult Full()
         {
             return View();
         }

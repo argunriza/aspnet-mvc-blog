@@ -7,24 +7,14 @@ namespace AspNetMvcBlog.Components
     {
         public IViewComponentResult Invoke()
         {
-            var model = GetNavbarData();
+            NavbarModel model = this.GetNavbarData();
+
             return View(model);
-            
         }
 
         private NavbarModel GetNavbarData()
         {
-            // Navbar için verileri hazırlayan iş mantığı burada olmalı.
-            // Örneğin, kullanıcı oturum açmış mı, belirli menü öğelerini belirlemek için kullanılabilir.
-            // Bu, ihtiyacınıza göre değişebilir.
-            return new NavbarModel
-            {
-                // Navbar verileriniz burada olmalı.
-            };
+            return new NavbarModel { };
         }
-
-
     }
-
-  
 }

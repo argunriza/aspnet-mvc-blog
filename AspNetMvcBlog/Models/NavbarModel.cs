@@ -1,6 +1,4 @@
 ﻿namespace AspNetMvcBlog.Models
 {
-    public class NavbarModel
-    {
-    }
+    public class NavbarModel { }
 }

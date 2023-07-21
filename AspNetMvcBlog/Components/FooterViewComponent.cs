@@ -3,11 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AspNetMvcBlog.Components
 {
-    public class FooterViewComponent: ViewComponent
+    public class FooterViewComponent : ViewComponent
     {
         public IViewComponentResult Invoke()
         {
-            var model3 = GetFooterData();
+            FooterModel model3 = this.GetFooterData();
+
             return View(model3);
         }
 

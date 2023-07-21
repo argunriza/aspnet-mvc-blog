@@ -7,7 +7,8 @@ namespace AspNetMvcBlog.Components
     {
         public IViewComponentResult Invoke()
         {
-            var model2 = GetSliderData();
+            SliderModel model2 = this.GetSliderData();
+
             return View(model2);
         }
 
